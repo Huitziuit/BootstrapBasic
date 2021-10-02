@@ -18,13 +18,14 @@
                 p-=1;
                 product[p]++;
 
-                message="t-shirt x "+product[0]+" = "+product[0]*45;
+                message='<p class="text-white text-center  lead">'
+                message+="t-shirt x "+product[0]+" = "+product[0]*45;
                 message+="</br>Vinyl OK x "+product[1]+" = "+product[1]*1499.98;
                 message+="</br>Guitar x "+product[2]+" = "+product[2]*5817.99;
                 message+="</br>Vinyl Rainbows x "+product[3]+" = "+product[3]*2908.99;
                 message+="</br>book x "+product[4]+" = "+product[4]*1999999;
 
-                message+="</br></br>Total = "+(product[0]*45+product[1]*1499.98+product[2]*5817.99+product[3]*2908.99+product[4]*1999999)
+                message+="</br></br>Total = $"+(product[0]*45+product[1]*1499.98+product[2]*5817.99+product[3]*2908.99+product[4]*1999999)+"</p>"
                 
         
                
@@ -102,7 +103,7 @@
                 </div>
 
                 <p class="text-white text-center  lead">Shopping</br></p>        
-                <p id="total" class="text-white text-center  lead"></p>
+                <div id="total" ></div>
 
             </div> <!--/Row justify center-->
         </div><!--/container-->
